@@ -1,12 +1,12 @@
 package main
 
 import (
-    "github.com/labstack/echo"
-    "github.com/aokabin/cmd-daemon/handler"
+	"github.com/aokabin/cmd-daemon/handler"
+	"github.com/labstack/echo"
 )
 
 func main() {
-    e := echo.New()
-    e.GET("/open", handler.Open)
-    e.Start(":22222")
+	e := echo.New()
+	e.GET("/open", handler.Open)
+	e.Start(":22222")
 }
