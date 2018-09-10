@@ -1,5 +1,8 @@
 NAME := cmdaemon
 
+.PHONY : run
+run:
+	go run main.go
 
 .PHONY : test
 test:
